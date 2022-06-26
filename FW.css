@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: constantia;
+    box-sizing: border-box;
+}
+
+h1{
+    
+    color: purple;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    place-items: center;
+    /* justify-content: space-around; */
+}
+
+nav  h1{ 
+   flex: 1;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: plum;
+    transition: 0.3s ease-in;
+    font-size: 1.5rem;
+
+}
+
+nav ul a:hover{
+    background-color: plum;
+    color: white;
+}
+
+.Dishes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 30px ;
+    grid-row-gap: 30px;
+    grid-template-areas: 
+    "Pastry Shavarma Chicken"
+    "Pizza Burger Pasta";
+
+}
+
+.Dish > div:nth-child(1) {
+    grid-area: Pastry;
+}
+
+.Dish > div:nth-child(2) {
+    grid-area: Shavarma;
+}
+
+.Dish > div:nth-child(3) {
+    grid-area: Chicken;
+}
+
+.Dish > div:nth-child(4) {
+    grid-area: Pizza;
+}
+
+.Dish > div:nth-child(5) {
+    grid-area: Burger;
+}
+
+ .Dish > div:nth-child(6) {
+    grid-area: Pasta;
+}
+
+.Dish img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+}
+
+
+
+
+.Dish h4 {
+    padding:5px;
+    text-align: center;
+}
+
+.Dish button{
+    padding: 5px 30px;
+    border: none;
+    background-color:palevioletred;
+
+}
